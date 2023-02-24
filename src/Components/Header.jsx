@@ -4,6 +4,7 @@ import Logo from "../Images/Frame.png";
 import style from "../Styles/Header.module.css";
 import NavbarBtn from "./NavbarBtn";
 import NavbarBtn2 from "./NavbarBtn2";
+import img from '../Images/Vector.png'
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
           <p>Your books on-chain</p>
           <p>The storefront you need to publish and sell books as NFTs</p>
           <div>
-          <NavbarBtn2 value='EXPLORE'  />
+          <NavbarBtn2 src={img} value='EXPLORE'  />
           <NavbarBtn value="PUBLISH" />
           </div>
         </div>
