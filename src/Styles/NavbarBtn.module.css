@@ -1,0 +1,37 @@
+.Parent {
+  background: #f6f6f6;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 8rem;
+  height: 2.5rem;
+  color: #7d75d8;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+}
+.Parent2 {
+  background: linear-gradient(90deg, #6b60eb 0%, #ce5fe6 100%);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 10rem;
+  height: 2.5rem;
+  color: #7d75d8;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  color: white;
+}
+
+/* .Parent2 img {
+  margin: 160px 4px;
+} */

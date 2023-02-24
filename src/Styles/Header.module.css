@@ -1,0 +1,111 @@
+.HeaderParent {
+  width: 100%;
+  background-image: url("../Images/hero-bg.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.Navbar {
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0px;
+  display: flex;
+}
+
+.Navbar > div:nth-child(1) {
+  flex: 1.7;
+}
+.Navbar > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  padding: 0px 1rem;
+}
+
+.Navbar p {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+.Navbar > div > button {
+  width: 200px;
+}
+@media (max-width: 1250px) {
+  .Navbar > div:nth-child(2) {
+    flex: 1.2;
+  }
+  .Navbar {
+    width: 95%;
+  }
+  .Navbar > div > img {
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 960px) {
+  .Navbar {
+    width: 100%;
+  }
+  .Navbar > div > img {
+    margin-left: 2.5rem;
+  }
+  .Navbar > div:nth-child(2) {
+    flex: 1.5;
+  }
+}
+
+.Header {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  margin-left: 10%;
+  height:36rem;
+}
+
+.HeaderP1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.HeaderP1 > p:nth-child(1) {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 120%;
+  color: white;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.HeaderP1 > p:nth-child(2) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: white;
+}
+.HeaderP1 > div {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.HeaderP2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.HeaderP2 > img {
+  width: 90%;
+  height: 100%;
+}
