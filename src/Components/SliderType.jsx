@@ -1,9 +1,8 @@
 import React from "react";
 import style from "../Styles/SliderType.module.css";
-import arrow1 from '../Images/arrow1.png' 
-import arrow2 from '../Images/arrow2.png' 
 import MultipleItems from "./ConfigSlider";
 import NavbarBtn2 from './NavbarBtn2'
+import hr from '../Images/simplehr.png'
 
 function SliderType() {
   return (
@@ -13,9 +12,9 @@ function SliderType() {
         <div>
           <p>FEATURED<span style={{color:'#7D75D8'}}>WORKS</span></p>
         </div>
-        <div>
-          <img  style={{margin:'0px 40px'}} src={arrow2} alt="" />
-          <img src={arrow1} walt="" />
+        <div className={style.arrows}>
+          <p>&larr;</p>
+          <p>&rarr;</p>
         </div>
       </div>
       <div className={style.Part2}>
@@ -26,6 +25,7 @@ function SliderType() {
       <NavbarBtn2 className={style.btn} value="CONTACT US" />
       </div>
     </div>
+    <img src={hr} alt="" className={style.hr}/>
        
         </>
   );

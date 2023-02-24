@@ -1,6 +1,7 @@
 .parent{
     width:80%;
     margin: auto;
+    
 }
 
 .imgP{
@@ -17,6 +18,5 @@
     width:90%;
     height: 400px;
     border-radius: 4px;
-    /* margin:0rem 0rem; */
-    /* padding: 1rem; */
 }
+
