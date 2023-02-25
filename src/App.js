@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './Components/Header';
+import NewSection1 from './Components/NewSection1';
 import NewSession from './Components/NewSession';
 import SliderType from './Components/SliderType';
 
@@ -8,7 +9,8 @@ function App() {
     <div>
     <Header />
     <SliderType />
-    <NewSession />
+    <NewSection1 />
+    {/* <NewSession /> */}
     </div>
   );
 }
