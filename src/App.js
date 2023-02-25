@@ -1,7 +1,7 @@
 import './App.css';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import NewSection1 from './Components/NewSection1';
-import NewSession from './Components/NewSession';
 import SliderType from './Components/SliderType';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Header />
     <SliderType />
     <NewSection1 />
-    {/* <NewSession /> */}
+    <Footer />
     </div>
   );
 }

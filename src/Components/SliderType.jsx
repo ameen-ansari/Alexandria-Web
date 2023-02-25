@@ -2,7 +2,6 @@ import React from "react";
 import style from "../Styles/SliderType.module.css";
 import MultipleItems from "./ConfigSlider";
 import NavbarBtn2 from "./NavbarBtn2";
-import hr from "../Images/Vector 16.png";
 
 function SliderType() {
   return (
