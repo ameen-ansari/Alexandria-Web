@@ -4,20 +4,29 @@ import Logo from "../Images/Frame.png";
 import style from "../Styles/Header.module.css";
 import NavbarBtn from "./NavbarBtn";
 import NavbarBtn2 from "./NavbarBtn2";
-import img from '../Images/Vector.png'
+import img from "../Images/Vector.png";
+import Burger from "../Images/Group 1067 (1).png";
 
 function Header() {
   return (
     <div className={style.HeaderParent}>
-      {/* <img src={bgImg} alt="BackGroundImage" className={style.bgImg} /> */}
       <div className={style.Navbar}>
         <div>
           <img src={Logo} alt="Logo" />
         </div>
         <div>
+          <p>About</p>
           <p>Authers</p>
           <p>Team</p>
-          <NavbarBtn value='CONNECT WALLET' />
+          <NavbarBtn className={style.btn1} value="CONNECT WALLET" />
+        <button>SELECT WALLET</button>
+          <div>
+            <img
+              className={style.burger}
+              src={Burger}
+              alt="More Opt..."
+            />
+          </div>
         </div>
       </div>
       <div className={style.Header}>
@@ -25,8 +34,8 @@ function Header() {
           <p>Your books on-chain</p>
           <p>The storefront you need to publish and sell books as NFTs</p>
           <div>
-          <NavbarBtn2 src={img} value='EXPLORE'  />
-          <NavbarBtn value="PUBLISH" />
+            <NavbarBtn2 src={img} value="EXPLORE" />
+            <NavbarBtn value="PUBLISH" />
           </div>
         </div>
         <div className={style.HeaderP2}>

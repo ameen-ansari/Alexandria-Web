@@ -59,9 +59,9 @@
 }
 .divTwo > div:nth-child(1) > img {
   position: relative;
-  bottom: 6rem;
-  left: 1px;
-  width: 300px;
+  bottom: 14vh;
+  right: 3rem;
+  width: 80%;
 }
 .divTwo > div:nth-child(2) {
   display: flex;
@@ -100,7 +100,8 @@
   margin-bottom: 2rem;
 }
 .hr {
-  width: 25%;
+  width: 80%;
+  margin: 1rem 0px;
 }
 .cardsP {
   width: 100%;

@@ -8,9 +8,9 @@ function App() {
   return (
     <div>
     <Header />
-    <SliderType />
-    <NewSection1 />
-    <Footer />
+    {/* <SliderType /> */}
+    {/* <NewSection1 /> */}
+    {/* <Footer /> */}
     </div>
   );
 }
