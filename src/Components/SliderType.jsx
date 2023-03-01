@@ -5,7 +5,7 @@ import NavbarBtn2 from "./NavbarBtn2";
 
 function SliderType() {
   return (
-    <>
+    // <>
       <div className={style.Parent}>
         <div className={style.Part1}>
           <div>
@@ -26,7 +26,7 @@ function SliderType() {
           <NavbarBtn2 className={style.btn} value="CONTACT US" />
         </div>
       </div>
-    </>
+    // </>
   );
 }
 

@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
     <Header />
-    {/* <SliderType /> */}
+    <SliderType />
     {/* <NewSection1 /> */}
     {/* <Footer /> */}
     </div>
