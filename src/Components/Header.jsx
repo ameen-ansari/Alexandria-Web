@@ -2,8 +2,8 @@ import React from "react";
 import bgImg from "../Images/hero-illustrations.png";
 import Logo from "../Images/Frame.png";
 import style from "../Styles/Header.module.css";
-import NavbarBtn from "./NavbarBtn";
-import NavbarBtn2 from "./NavbarBtn2";
+import NavbarBtn from "./Buttons/NavbarBtn";
+import NavbarBtn2 from "./Buttons/NavbarBtn2";
 import img from "../Images/Vector.png";
 import Burger from "../Images/Group 1067 (1).png";
 
@@ -19,13 +19,9 @@ function Header() {
           <p>Authers</p>
           <p>Team</p>
           <NavbarBtn className={style.btn1} value="CONNECT WALLET" />
-        <button>SELECT WALLET</button>
+          <button>SELECT WALLET</button>
           <div>
-            <img
-              className={style.burger}
-              src={Burger}
-              alt="More Opt..."
-            />
+            <img className={style.burger} src={Burger} alt="More Opt..." />
           </div>
         </div>
       </div>
@@ -34,8 +30,8 @@ function Header() {
           <p>Your books on-chain</p>
           <p>The storefront you need to publish and sell books as NFTs</p>
           <div>
-            <NavbarBtn2 src={img} value="EXPLORE" />
-            <NavbarBtn value="PUBLISH" />
+              <NavbarBtn2 src={img} value="EXPLORE" />
+              <NavbarBtn value="PUBLISH" />
           </div>
         </div>
         <div className={style.HeaderP2}>

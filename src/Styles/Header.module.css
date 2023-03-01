@@ -8,7 +8,7 @@
 .Navbar {
   width: 90%;
   margin: auto;
-  padding: 4rem 0px;
+  padding: 2rem 0px;
   display: flex;
 }
 
@@ -113,9 +113,20 @@
 @media (max-width: 600px) {
   .burger {
     display: block;
+    z-index: 3;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    margin-top: 7px;
+  }
+  
+  .burger img {
     width: 25px;
     height: 25px;
-    z-index: 3;
+
+  }
+  .Navbar {
+    padding: 1rem 0rem;
   }
   .Navbar div:nth-child(1) {
   display: flex;
@@ -133,11 +144,12 @@
     display: none;
   }
   .Navbar > div:nth-child(2) > button:nth-child(5){
-    /* padding: 0.5rem 1rem; */
-    margin: auto;
     text-align: center;
     display: block;
-    width: 60%;
+    position: absolute;
+    right: 4rem;
+    top: 1.2rem;
+    width: 30%;
   }
   .Navbar > div:nth-child(4) > div:nth-child(6){
     width: 20%;
@@ -148,6 +160,23 @@
   .Navbar > div:nth-child(2){
     width: 80%;
   }
+}
+
+@media (max-width:450px){
+  .Navbar > div:nth-child(1) {
+    width: 100%;
+  }
+  .Navbar > div:nth-child(1) img{
+    width: 170px;
+    margin-left:2rem ;
+  }
+  .Navbar > div:nth-child(2) > button:nth-child(5){
+    display: none;
+  }
+  .burger {
+    top: 1rem;
+  }
+
 }
 
 .Header {
@@ -183,7 +212,7 @@
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
-  color: gray;
+  color: white;
 }
 .HeaderP1 > div {
   display: flex;
@@ -210,12 +239,13 @@
 }
 @media (max-width: 700px) {
   .HeaderP1 > p:nth-child(1) {
-    font-size: 48px;
+    font-size: 36px;
   }
   .Header{
     flex-direction: column-reverse;
     gap: 4rem;
   }
+
 .HeaderParent{
   background-repeat: repeat;
 }
@@ -227,7 +257,9 @@
   background-color: #303365  ;
 }
 .HeaderP1 > p:nth-child(2){
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 2rem;
+  color: gray;
 }
 .HeaderP1 div {
   margin: auto;

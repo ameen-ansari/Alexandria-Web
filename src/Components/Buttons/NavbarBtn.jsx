@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../Styles/NavbarBtn.module.css";
+import style from "../../Styles/NavbarBtn.module.css";
 
 function NavbarBtn(prop) {
 

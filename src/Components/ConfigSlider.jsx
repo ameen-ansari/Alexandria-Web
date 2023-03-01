@@ -15,7 +15,7 @@ export default class MultipleItems extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 3,
       slidesToScroll: 3,
       responsive: [
@@ -40,7 +40,7 @@ export default class MultipleItems extends Component {
 
 
 
-let arr = [img1 , img2 ,img3]
+let arr = [img1 , img2 ,img3 ,img1]
     return (
       <div className={style.parent}>
         <Slider {...settings}>

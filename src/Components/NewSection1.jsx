@@ -3,8 +3,8 @@ import img from "../Images/Frame (2).png";
 import img2 from "../Images/Vector 16.png";
 import img3 from "../Images/Group 1110.png";
 import style from "../Styles/NewSession.module.css";
-import NavbarBtn from "./NavbarBtn2";
-import NavbarBtn1 from "./NavbarBtn";
+import NavbarBtn from "./Buttons/NavbarBtn2";
+import NavbarBtn1 from "./Buttons/NavbarBtn";
 import img4 from "../Images/Edit.png";
 import group2 from "../Images/Group 2.png";
 
