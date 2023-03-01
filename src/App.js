@@ -9,7 +9,7 @@ function App() {
     <div>
     <Header />
     <SliderType />
-    {/* <NewSection1 /> */}
+    <NewSection1 />
     {/* <Footer /> */}
     </div>
   );

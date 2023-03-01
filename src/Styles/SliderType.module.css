@@ -35,6 +35,14 @@ text-align: left;
     .Part1 > div:nth-child(2) {
         margin: auto;
     }
+    .Part1 > div:nth-child(1) > p:nth-child(1){
+        font-size: 25px;
+    }
+}
+@media (max-width:400px){
+    .Part1 > div:nth-child(1) > p:nth-child(1){
+        font-size: 22px;
+    }
 }
 
 .arrows p{
