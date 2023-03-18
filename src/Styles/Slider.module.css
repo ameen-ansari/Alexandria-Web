@@ -3,10 +3,13 @@
   margin: auto;
   border-radius: 5px;
   outline: 0;
+  position: relative;
+  z-index: 289436;
+  background-color: #f6f6f6 !important;
 }
 
 .imgP {
-  width: 100%;
+  width: 100% ;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -15,7 +18,8 @@
 .img {
   box-shadow: 0px 0px 5px rgb(171, 171, 171);
   padding: 1rem;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   height: 400px;
   border-radius: 9px;
 }
@@ -27,9 +31,20 @@
     display: none;
 }
 
+.imgP span {
+  display: none;
+}
+
+
 @media (max-width: 600px) {
+  .imgP span{
+    display: block;
+  }
   .imgP > * {
     display: block;
+  }
+  .imgP p{
+    padding:0.5rem 1rem !important;
   }
   .imgP > img {
     display: block;
@@ -43,12 +58,15 @@
     padding: 0rem 0rem 1rem 0rem;
     border-radius: 9px;
   }
+  .img {
+    box-shadow: none;
+  }
 }
 
-.imgP div {
+.imgP > div {
   display: flex;
   justify-content: space-between;
-  padding: 0px 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .imgP > p:nth-child(2) {
@@ -56,19 +74,38 @@
   font-weight: 600;
   font-family: "Open Sans";
   padding: 0.5rem 0px;
+  color:#FFFFFF;
+}
+
+.imgP span {
+  width: 10px ;
+  height: 10px ;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.spanP {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem ;
+
 }
 
 .imgP > p:nth-child(3) {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Open Sans";
   padding: 1rem 0px;
+  color:#F6F6F6
 }
 
 
 /* dg */
 .pp {
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .Part1{
   display: flex;

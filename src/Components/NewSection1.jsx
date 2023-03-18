@@ -5,8 +5,13 @@ import img3 from "../Images/Group 1110.png";
 import style from "../Styles/NewSession.module.css";
 import NavbarBtn from "./Buttons/NavbarBtn2";
 import NavbarBtn1 from "./Buttons/NavbarBtn";
-import img4 from "../Images/Edit.png";
 import group2 from "../Images/Group 2.png";
+import cardImg1 from '../Images/Cards/Edit.svg'
+import cardImg2 from '../Images/Cards/Send.svg'
+import cardImg3 from '../Images/Cards/Document.svg'
+import cardImg5 from '../Images/Cards/Paper.svg'
+import cardImg4 from '../Images/Cards/Edit Square.svg'
+import floaterImg from '../Images/Cards/Rectangle.svg'
 
 function NewSection1() {
   return (
@@ -44,7 +49,7 @@ function NewSection1() {
         </p>
         <div className={style.cardsP}>
           <div>
-            <img src={img4} alt="" />
+            <img src={cardImg1} alt="" />
             <p>Author Cohorts</p>
             <p>
               Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
@@ -54,7 +59,27 @@ function NewSection1() {
             </p>
           </div>
           <div>
-            <img src={img4} alt="" />
+            <img src={cardImg2} alt="" />
+            <p>Early Access</p>
+            <p>
+              Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
+              nisi ante blandit ligula, vel elementum urna velit eu lorem.
+              Nullam in mauris sit amet quam efficitur aliquam vel accumsan
+              elit.
+            </p>
+          </div>
+          <div>
+            <img src={cardImg3} alt="" />
+            <p>Platform Reader</p>
+            <p>
+              Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
+              nisi ante blandit ligula, vel elementum urna velit eu lorem.
+              Nullam in mauris sit amet quam efficitur aliquam vel accumsan
+              elit.
+            </p>
+          </div>
+          <div>
+            <img src={cardImg4} alt="" />
             <p>Author Cohorts</p>
             <p>
               Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
@@ -64,8 +89,8 @@ function NewSection1() {
             </p>
           </div>
           <div>
-            <img src={img4} alt="" />
-            <p>Author Cohorts</p>
+            <img src={cardImg5} alt="" />
+            <p>Early Access</p>
             <p>
               Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
               nisi ante blandit ligula, vel elementum urna velit eu lorem.
@@ -73,26 +98,7 @@ function NewSection1() {
               elit.
             </p>
           </div>
-          <div>
-            <img src={img4} alt="" />
-            <p>Author Cohorts</p>
-            <p>
-              Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
-              nisi ante blandit ligula, vel elementum urna velit eu lorem.
-              Nullam in mauris sit amet quam efficitur aliquam vel accumsan
-              elit.
-            </p>
-          </div>
-          <div>
-            <img src={img4} alt="" />
-            <p>Author Cohorts</p>
-            <p>
-              Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
-              nisi ante blandit ligula, vel elementum urna velit eu lorem.
-              Nullam in mauris sit amet quam efficitur aliquam vel accumsan
-              elit.
-            </p>
-          </div>
+        <img className={style.floatimg} src={floaterImg} alt="" />
         </div>
       </div>
       <div className={style.Div4}>

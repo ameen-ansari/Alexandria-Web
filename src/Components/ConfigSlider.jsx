@@ -23,7 +23,7 @@ export default class PreviousNextMethods extends Component {
   }
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 1000,
       slidesToShow: 3,
@@ -35,7 +35,7 @@ export default class PreviousNextMethods extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
         {
@@ -71,7 +71,11 @@ export default class PreviousNextMethods extends Component {
                   <p>The War of The Worlds</p>
                   <p>H.G. Wells | Collector’s Edition</p>
                   <div>
-                    <img src={tc} alt="" />
+                   <div className={style.spanP}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   </div>
                     <img src={tc2} alt="" />
                   </div>
                 </div>
