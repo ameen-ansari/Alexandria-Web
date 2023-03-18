@@ -1,11 +1,11 @@
 import React from "react";
 import bgImg from "../Images/hero-illustrations.png";
-import Logo from "../Images/Frame.png";
+import Logo from "../Images/Frame.svg";
 import style from "../Styles/Header.module.css";
 import NavbarBtn from "./Buttons/NavbarBtn";
 import NavbarBtn2 from "./Buttons/NavbarBtn2";
 import img from "../Images/Vector.png";
-import Burger from "../Images/Group 1067 (1).png";
+import Burger from "../Images/Group 1067.svg";
 
 function Header() {
   return (

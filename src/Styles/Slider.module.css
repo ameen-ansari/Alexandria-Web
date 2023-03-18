@@ -2,6 +2,7 @@
   width: 80%;
   margin: auto;
   border-radius: 5px;
+  outline: 0;
 }
 
 .imgP {
@@ -62,4 +63,85 @@
   font-weight: 600;
   font-family: "Open Sans";
   padding: 1rem 0px;
+}
+
+
+/* dg */
+.pp {
+  padding: 1rem 0rem;
+}
+.Part1{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding:1rem 0px;
+  position: relative;
+}
+.Part1 > div:nth-child(1){
+  width: 90%;
+font-family: 'Prata';
+font-size:30px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+}
+.Part1> div:nth-child(2){
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:650px){
+  .Part1 {
+      flex-direction: column;
+  }
+  .Part1 > div:nth-child(1) > p{
+      font-size: 28px;
+      text-align: center;
+  }
+  .Part1 > div:nth-child(2) {
+      margin: auto;
+  }
+  .Part1 > div:nth-child(1) > p:nth-child(1){
+      font-size: 25px;
+  }
+}
+@media (max-width:400px){
+  .Part1 > div:nth-child(1) > p:nth-child(1){
+      font-size: 22px;
+  }
+}
+
+.arrows p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #7d75d8;
+  cursor: pointer;
+  user-select: none;
+}
+.pp > p:nth-child(3){
+  font-family: 'prata';
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 3rem;
+}
+.pp > div:nth-child(4){
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 1rem;
+}
+
+.hr {
+  width:50%;
+  display: block;
+  margin: 1rem auto;
 }

@@ -2,7 +2,8 @@
   width: 100%;
   background-image: url("../Images/hero-bg.png");
   background-repeat: repeat;
-  background-size:cover
+  background-size: cover;
+  position: relative;
 }
 
 .Navbar {
@@ -10,6 +11,7 @@
   margin: auto;
   padding: 2rem 0px;
   display: flex;
+  z-index: 50000;
 }
 
 .Navbar > div:nth-child(1) {
@@ -17,7 +19,6 @@
 }
 .Navbar > div:nth-child(2) {
   width: 50%;
-  /* flex: 1; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -35,10 +36,10 @@
   width: 200px;
 }
 
-.Navbar > div:nth-child(2) > button:nth-child(5){
+.Navbar > div:nth-child(2) > button:nth-child(5) {
   width: 50%;
-  padding: 0.5rem  0rem ;
-  border:none;
+  padding: 0.5rem 0rem;
+  border: none;
   border-radius: 5px;
   text-align: center;
   color: black;
@@ -56,7 +57,7 @@
   border: none;
 }
 
-.Navbar div:nth-child(2) > button:nth-child(5){
+.Navbar div:nth-child(2) > button:nth-child(5) {
   display: none;
 }
 @media (max-width: 1250px) {
@@ -119,19 +120,18 @@
     right: 1.5rem;
     margin-top: 7px;
   }
-  
+
   .burger img {
     width: 25px;
     height: 25px;
-
   }
   .Navbar {
     padding: 1rem 0rem;
   }
   .Navbar div:nth-child(1) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .Navbar > div > img {
@@ -143,7 +143,7 @@
   .Navbar > div:nth-child(2) > button:nth-child(4) {
     display: none;
   }
-  .Navbar > div:nth-child(2) > button:nth-child(5){
+  .Navbar > div:nth-child(2) > button:nth-child(5) {
     text-align: center;
     display: block;
     position: absolute;
@@ -151,32 +151,31 @@
     top: 1.2rem;
     width: 30%;
   }
-  .Navbar > div:nth-child(4) > div:nth-child(6){
+  .Navbar > div:nth-child(4) > div:nth-child(6) {
     width: 20%;
   }
-  .Navbar > div:nth-child(1){
+  .Navbar > div:nth-child(1) {
     width: 120%;
   }
-  .Navbar > div:nth-child(2){
+  .Navbar > div:nth-child(2) {
     width: 80%;
   }
 }
 
-@media (max-width:450px){
+@media (max-width: 450px) {
   .Navbar > div:nth-child(1) {
     width: 100%;
   }
-  .Navbar > div:nth-child(1) img{
+  .Navbar > div:nth-child(1) img {
     width: 170px;
-    margin-left:2rem ;
+    margin-left: 2rem;
   }
-  .Navbar > div:nth-child(2) > button:nth-child(5){
+  .Navbar > div:nth-child(2) > button:nth-child(5) {
     display: none;
   }
   .burger {
     top: 1rem;
   }
-
 }
 
 .Header {
@@ -241,32 +240,32 @@
   .HeaderP1 > p:nth-child(1) {
     font-size: 36px;
   }
-  .Header{
+  .Header {
     flex-direction: column-reverse;
     gap: 4rem;
   }
 
-.HeaderParent{
-  background-repeat: repeat;
-}
-.HeaderP1  > div{
-  flex-direction: column;
-  gap: 1rem;
-}
-.HeaderP1  > div button:nth-child(2){
-  background-color: #303365  ;
-}
-.HeaderP1 > p:nth-child(2){
-  font-size: 22px;
-  line-height: 2rem;
-  color: gray;
-}
-.HeaderP1 div {
-  margin: auto;
-}
-.HeaderP1 > div button {
-  width: 100%;
-  margin-right: 2rem;
-  /* margin: auto; */
-}
+  .HeaderParent {
+    background-repeat: repeat;
+  }
+  .HeaderP1 > div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .HeaderP1 > div button:nth-child(2) {
+    background-color: #303365;
+  }
+  .HeaderP1 > p:nth-child(2) {
+    font-size: 22px;
+    line-height: 2rem;
+    color: gray;
+  }
+  .HeaderP1 div {
+    margin: auto;
+  }
+  .HeaderP1 > div button {
+    width: 100%;
+    margin-right: 2rem;
+    /* margin: auto; */
+  }
 }
