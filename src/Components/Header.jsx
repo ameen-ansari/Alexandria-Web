@@ -15,7 +15,9 @@ function Header() {
     let offC = document.getElementById("offC");
     offC.style.top = "0vh";
     offC.style.display = "flex";
+    // offC.style.position = "absolute";
     offC.style.transition = "0.2s";
+    console.log('burger Working');
   };
   let removeOffC = () => {
     let offC = document.getElementById("offC");
@@ -62,17 +64,16 @@ function Header() {
             X
           </p>
           <p
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer" }} onClick={removeOffC}
           >
-            Our team
+            About
           </p>
           <p
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer" }} onClick={removeOffC}
           >
-            Tokens
+            Auther
           </p>
-          <p>Connect wallet</p>
-          <p>Lightpaper</p>
+          <p onClick={removeOffC}>Team</p>
           <NavbarBtn className={style.btn1} value="CONNECT WALLET" /> 
         </div>
       </div>

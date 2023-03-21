@@ -1,8 +1,8 @@
 import style from "../Styles/Footer.module.css";
 import React from "react";
 import F2 from "../Images/Frame (2).png";
-import discard from "../Images/discord-fill.png";
-import twitter from "../Images/twitter-fill.png";
+import fb from "../Images/Vector.svg";
+import discard from "../Images/Vector1.svg";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
         <p className={style.copyr}>© 2022 Alexandria Labs. All Right Reserved</p>
       </div>
       <div style={{ display: "flex" }} className={style.twitterwdc}>
-        <img src={twitter} alt="" />
+        <img src={fb} alt="" />
         <img src={discard} alt="" />
       </div>
       <div>
@@ -25,7 +25,7 @@ function Footer() {
       </div>
       <div>
         <div>
-          <img src={twitter} alt="" />
+          <img src={fb} alt="" />
           <p>Twitter</p>
         </div>
         <div>
