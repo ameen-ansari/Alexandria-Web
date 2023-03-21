@@ -8,12 +8,17 @@
   background-color: #f6f6f6 !important;
 }
 
+
+
 .imgP {
   width: 100% ;
-  margin: auto;
+  margin:1rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.img:hover{
+  background-color: #7d75d8;
 }
 .img {
   box-shadow: 0px 0px 5px rgb(171, 171, 171);
@@ -102,7 +107,7 @@
 
 /* dg */
 .pp {
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -113,11 +118,13 @@
   margin: auto;
   padding:1rem 0px;
   position: relative;
+  justify-content: flex-end;
+  align-items: center;
 }
 .Part1 > div:nth-child(1){
   width: 90%;
 font-family: 'Prata';
-font-size:30px;
+font-size:38px;
 font-weight: 400;
 line-height: 48px;
 letter-spacing: 0em;
@@ -130,38 +137,56 @@ text-align: left;
   align-items: center;
 }
 
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 1rem;
+}
+
 @media (max-width:650px){
   .Part1 {
-      flex-direction: column;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
   }
-  .Part1 > div:nth-child(1) > p{
-      font-size: 28px;
-      text-align: center;
+  .imgP {
+margin: auto;
+  }
+  .Part1 p{
+    text-align: center;
   }
   .Part1 > div:nth-child(2) {
       margin: auto;
+    }
+    .pp {
+      gap: 0px;
+    }
   }
-  .Part1 > div:nth-child(1) > p:nth-child(1){
-      font-size: 25px;
-  }
-}
-@media (max-width:400px){
-  .Part1 > div:nth-child(1) > p:nth-child(1){
-      font-size: 22px;
-  }
-}
-
-.arrows p{
+  
+  .arrows p{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 5px;
-  font-size: 42px;
+  font-size: 80px;
   line-height: 48px;
   font-weight: 600;
   color: #7d75d8;
   cursor: pointer;
   user-select: none;
+}
+
+
+@media (max-width:500px){
+  .Part1 > div:nth-child(1) > p:nth-child(1){
+      font-size: 28px;
+  }
+  .arrows p {
+    font-size: 55px !important;
+  }
 }
 .pp > p:nth-child(3){
   font-family: 'prata';

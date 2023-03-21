@@ -9,7 +9,7 @@ function Footer() {
     <div className={style.parent}>
       <div>
         <img src={F2} alt="" />
-        <p>© 2022 Alexandria Labs. All Right Reserved</p>
+        <p className={style.copyr}>© 2022 Alexandria Labs. All Right Reserved</p>
       </div>
       <div style={{ display: "flex" }} className={style.twitterwdc}>
         <img src={twitter} alt="" />
@@ -34,7 +34,7 @@ function Footer() {
         </div>
       </div>
       <div style={{textAlign:'center' , margin:'2rem 0rem 0px 0px '}}>
-        <p>© 2022 Alexandria Labs. All Right Reserved</p>
+        <p className={style.copyr}>© 2022 Alexandria Labs. All Right Reserved</p>
       </div>
     </div>
   );

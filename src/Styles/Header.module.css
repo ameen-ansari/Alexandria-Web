@@ -3,6 +3,7 @@
   background-image: url("../Images/hero-bg.png");
   background-repeat: repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   padding-bottom: 3rem  ;
 }
@@ -32,14 +33,11 @@
   font-size: 18px;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
-  cursor: pointer;
+  cursor: pointer !important;
   position: relative;
-  z-index: 100;
+  z-index: 10000656756650;
 }
 .Navbar > div > button {
-  position: relative;
-  z-index: 100;
-  cursor: pointer;
   width: 200px;
 }
 
@@ -62,6 +60,12 @@
   font-size: 18px;
   text-align: center;
   border: none;
+}
+
+.Navbar button {
+  position: relative;
+  z-index: 10000656756650;
+  cursor: pointer;
 }
 
 .Navbar div:nth-child(2) > button:nth-child(5) {
@@ -121,8 +125,8 @@
 @media (max-width: 600px) {
   .burger {
     display: block;
-    z-index: 3;
     position: absolute;
+    z-index: 3876378436467657;
     top: 1.5rem;
     right: 1.5rem;
     margin-top: 7px;
@@ -187,10 +191,9 @@
 
 .Header {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: flex-end;
   margin: auto;
-  margin-left: 10%;
   padding-top:4rem ;
 }
 
@@ -199,12 +202,15 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   padding-bottom: 2rem;
   position: relative;
   z-index: 10;
 }
+  .HeaderP1 > *{
+    padding-left: 5rem;
+  }
 
 .HeaderP1 > p:nth-child(1) {
   font-family: "Prata", serif;
@@ -222,9 +228,10 @@
 }
 .HeaderP1 > div {
   display: flex;
-  width: 80%;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: flex-start;
   align-items: center;
+  gap: 2rem;
 }
 
 .HeaderP2 {
@@ -237,7 +244,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 189475354;
 }
 
 @media (max-width: 900px) {
@@ -335,7 +342,7 @@
   top:0%;
   left: 0%;
   top: -100vh;
-  z-index: 106768400;
+  z-index: 1067684876328300;
   display: flex;
   justify-content: center;
   align-items: center;
