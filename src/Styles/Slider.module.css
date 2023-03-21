@@ -112,6 +112,8 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+
 .Part1{
   display: flex;
   width: 80%;
@@ -151,6 +153,9 @@ text-align: left;
       justify-content: center;
       align-items: center;
       gap: 2rem;
+  }
+  .pp{
+    padding: 0px 0px 3rem 0rem;
   }
   .imgP {
 margin: auto;

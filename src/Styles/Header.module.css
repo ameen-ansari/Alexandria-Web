@@ -124,6 +124,7 @@
 }
 
 @media (max-width: 600px) {
+ 
   .burger {
     display: block;
     position: absolute;
@@ -214,6 +215,9 @@
   }
   
   @media (max-width:700px) {
+    .HeaderParent {
+      padding-bottom: 0px;
+    }
     .HeaderP1 {
       width: 80%;
       margin: auto;
