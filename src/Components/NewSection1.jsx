@@ -72,7 +72,7 @@ function NewSection1() {
             <img src={cardImg3} alt="" />
             <p>Platform Reader</p>
             <p>
-              Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
+            Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
               nisi ante blandit ligula, vel elementum urna velit eu lorem.
               Nullam in mauris sit amet quam efficitur aliquam vel accumsan
               elit.
