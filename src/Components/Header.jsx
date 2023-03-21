@@ -15,13 +15,10 @@ function Header() {
     let offC = document.getElementById("offC");
     offC.style.top = "0vh";
     offC.style.display = "flex";
-    // offC.style.position = "absolute";
     offC.style.transition = "0.2s";
-    console.log('burger Working');
   };
   let removeOffC = () => {
     let offC = document.getElementById("offC");
-    console.log('jkhfjds');
     offC.style.top = "-100vh";
     offC.style.transition = "0.2s";
   };
@@ -74,7 +71,7 @@ function Header() {
             Auther
           </p>
           <p onClick={removeOffC}>Team</p>
-          <NavbarBtn className={style.btn1} value="CONNECT WALLET" /> 
+          <NavbarBtn func={removeOffC} className={style.btn1} value="CONNECT WALLET" /> 
         </div>
       </div>
     </div>

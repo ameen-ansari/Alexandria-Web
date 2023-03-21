@@ -6,12 +6,13 @@
   background-position: center;
   position: relative;
   padding-bottom: 3rem  ;
+  bottom: 2rem;
 }
 
 .Navbar {
   width: 90%;
   margin: auto;
-  padding: 2rem 0px;
+  padding: 4rem 0px;
   display: flex;
   z-index: 50000;
 }
@@ -127,7 +128,7 @@
     display: block;
     position: absolute;
     z-index: 3876378436467657;
-    top: 1.5rem;
+    top:4.3rem;
     right: 1.5rem;
     margin-top: 7px;
   }
@@ -137,7 +138,7 @@
     height: 25px;
   }
   .Navbar {
-    padding: 1rem 0rem;
+    padding: 4rem 0rem;
   }
   .Navbar div:nth-child(1) {
     display: flex;
@@ -159,7 +160,7 @@
     display: block;
     position: absolute;
     right: 4rem;
-    top: 1.2rem;
+    top: 4rem;
     width: 30%;
   }
   .Navbar > div:nth-child(4) > div:nth-child(6) {
@@ -185,7 +186,7 @@
     display: none;
   }
   .burger {
-    top: 1rem;
+    top: 4.2rem;
   }
 }
 
@@ -302,8 +303,6 @@
   }
   .HeaderP1 > div button {
     width: 100%;
-    margin-right: 2rem;
-    /* margin: auto; */
   }
   .HeaderP1 {
     position: relative;
