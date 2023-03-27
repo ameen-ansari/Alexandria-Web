@@ -39,7 +39,8 @@
   z-index: 10000656756650;
 }
 .Navbar > div > button {
-  width: 200px;
+  width: 193px;
+  height: 52px;
 }
 
 .Navbar > div:nth-child(2) > button:nth-child(5) {
