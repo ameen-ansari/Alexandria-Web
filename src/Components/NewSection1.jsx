@@ -39,7 +39,7 @@ function NewSection1() {
               Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
               nisi ante blandit ligula, vel elementum urna velit eu lorem
             </p>
-            <NavbarBtn value="PUBLISH &rarr;" />
+            <NavbarBtn value="PUBLISH WORKS &rarr;" />
           </div>
         </div>
       </div>

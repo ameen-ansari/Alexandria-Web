@@ -5,7 +5,27 @@
   font-family: "Open Sans";
   display: flex;
   padding: 4rem;
+  flex-wrap: wrap;
 }
+.parent2 {
+  background-color: #0e0f1e;
+  width: 100%;
+  color: white;
+  font-family: "Open Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 0.1rem;
+  padding: 1rem 0px;
+  display: none;
+}
+
+
+
+
 
 .parent > div:nth-child(1) {
   flex: 4;
@@ -15,6 +35,7 @@
   align-items: flex-start;
   gap: 2rem;
 }
+
 
 .parent > div:nth-child(1) > img {
   width: 60%;
@@ -52,7 +73,15 @@
   align-items: center;
   gap: 0.5rem;
 }
-
+@media (max-width:1150px) {
+  .parent2{
+    display: flex;
+  }
+  .parent > div:nth-child(5) {
+    display: none;
+    flex: 0 !important;
+  }
+}
 .twitterwdc {
   display: none !important ;
 }
@@ -63,7 +92,8 @@
 @media (max-width: 700px) {
   .parent {
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 4rem 0.5rem;
   }
   .parent > div:nth-child(1) > p {
     display: none;
@@ -101,7 +131,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    /* border: 2px solid black; */
     margin: auto;
 }
 .parent div:nth-child(4){
@@ -109,10 +138,12 @@
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    /* border: 2px solid black; */
     margin: auto;
   }
   .parent > div:nth-child(5) div {
+    display: none;
+  }
+  .parent2 {
     display: none;
   }
   .parent > div:nth-child(6) {
@@ -121,6 +152,18 @@
 }
 
 .parent p {
+  cursor: pointer;
+  font-size: 20px;
+  color: #F6F6F6;
+  font-weight: 400;
+}
+
+
+.parent2 > div {
+  display: flex;
+  gap: 1rem;
+}
+.parent2 p {
   cursor: pointer;
   font-size: 20px;
   color: #F6F6F6;

@@ -66,12 +66,16 @@
   .img {
     box-shadow: none;
   }
+  .Part1 > div:nth-child(1){
+    font-size: 24px;
+    font-weight: 400;
+  }
 }
 
 .imgP > div {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .imgP > p:nth-child(2) {
@@ -152,7 +156,7 @@ text-align: left;
     flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
   }
   .pp{
     padding: 0px 0px 3rem 0rem;
@@ -190,7 +194,7 @@ margin: auto;
       font-size: 28px;
   }
   .arrows p {
-    font-size: 55px !important;
+    font-size: 80px !important;
   }
 }
 .pp > p:nth-child(3){

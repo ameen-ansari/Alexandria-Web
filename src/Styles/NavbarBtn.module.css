@@ -13,6 +13,8 @@
   font-size: 18px;
   text-align: center;
   border: none;
+  position: relative !important;
+  z-index: 1000008766;
 }
 .Parent2 {
   background: linear-gradient(90deg, #6b60eb 0%, #ce5fe6 100%);
@@ -20,6 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative !important;
+  z-index: 1000008764;
 
   width: 10rem;
   height: 2.5rem;

@@ -31,6 +31,7 @@
   width: 25%;
 }
 
+
 .divOne > p:nth-child(4) {
   font-size: 32px;
   font-weight: 400;
@@ -120,6 +121,10 @@
   font-size: 24px;
   font-weight: 400;
 }
+.divTwo button {
+ width: 300px;
+ height: 57px;
+}
 
 .Div3 {
   width: 100%;
@@ -145,7 +150,6 @@
 
 @media (min-width: 500px) {
   .Div3 p:nth-child(1) {
-    /* text-align: left; */
     width: 80%;
     margin: auto;
     font-size: 40px;
@@ -154,18 +158,20 @@
 }
 @media (max-width: 500px) {
   .Div3 p:nth-child(1) {
-    /* text-align: left; */
     width: 80%;
     margin: auto;
     font-size: 32px;
     padding-bottom: 2rem;
   }
+  .divTwo button {
+    width: 220px;
+    height: 48px;
+   }
 }
 @media (max-width: 400px) {
   .Div3 p:nth-child(1) {
     width: 80%;
     text-align: left;
-    /* font-size: 22px; */
   }
 }
 .hr {
@@ -173,7 +179,6 @@
   margin: 1rem 0px;
 }
 .cardsP {
-  /* width: 100%; */
   width: 90%;
   margin: auto;
   padding: 2rem 0px;
@@ -196,6 +201,9 @@
   align-items:flex-start;
 }
 @media (max-width:900px) {
+  .divTwo > div:nth-child(2) {
+    gap: 0.5rem;
+  }
   .cardsP > div{
     width: 45%;
   }
@@ -230,13 +238,24 @@ padding: 8rem 0px 5rem 0px;
 }
 @media (max-width: 600px) {
   .cardsP > div {
-    padding: 1rem;
+    padding:3rem 2rem;
     width: 90%;
     border-radius: 8px;
     background-color: white;
   }
+  .cardsP > div p:nth-child(2) {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .cardsP > div p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 @media (max-width: 700px) {
+  .divOne > img:nth-child(3) {
+    width: 92%;
+  }
   .divTwo > div:nth-child(1) {
     width: 80%;
   }
@@ -296,7 +315,7 @@ padding: 8rem 0px 5rem 0px;
 .Div4 p:nth-child(2) {
   font-family: "prata";
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .Div4 p:nth-child(3) {
   font-family: "prata";
@@ -313,6 +332,16 @@ padding: 8rem 0px 5rem 0px;
     font-size: 48px;
     font-weight: 500;
   }
+  .floatimg {
+    width: 200px;
+    height: 200px;
+    top: -5rem;
+  }
+  
+.Div4 p:nth-child(2) {
+  font-size: 40px;
+  font-weight: 400;
+}
 }
 @media (min-width: 550px) {
   .Div4 p:nth-child(3) {
@@ -356,6 +385,7 @@ width: 70%;
   background: #7d75d8;
   position: relative;
   right: 0.8rem;
+  border-radius: 8px;
 }
 
 @media (max-width: 550px) {

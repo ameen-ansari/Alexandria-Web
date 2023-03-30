@@ -6,6 +6,7 @@ import discard from "../Images/Vector1.svg";
 
 function Footer() {
   return (
+<>
     <div className={style.parent}>
       <div>
         <img src={F2} alt="" />
@@ -17,7 +18,7 @@ function Footer() {
       </div>
       <div>
         <p>About</p>
-        <p>Authors</p>
+        <p>Author Submissions</p>
       </div>
       <div>
         <p>Early Access</p>
@@ -37,6 +38,17 @@ function Footer() {
         <p className={style.copyr}>© 2022 Alexandria Labs. All Right Reserved</p>
       </div>
     </div>
+    <div className={style.parent2}>
+        <div>
+          <img src={fb} alt="" />
+          <p>Twitter</p>
+        </div>
+        <div>
+          <img src={discard} alt="" />
+          <p>Discard</p>
+        </div>
+      </div>
+    </>
   );
 }
 

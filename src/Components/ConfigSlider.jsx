@@ -54,7 +54,7 @@ export default class PreviousNextMethods extends Component {
         <div className={style.Part1}>
           <div>
             <p>
-              FEATURED<span style={{ color: "#7D75D8" }}>WORKS</span>
+              FEATURED <span style={{ color: "#7D75D8" }}>WORKS</span>
             </p>
           </div>
           <div className={style.arrows}>
