@@ -246,6 +246,11 @@
   line-height: 120%;
   color: white;
 }
+@media (max-width: 550px) {
+  .HeaderP1 > p:nth-child(1) {
+    width: 95%;
+  }
+ }
 .HeaderP1 > p:nth-child(2) {
   font-style: normal;
   font-weight: 400;
