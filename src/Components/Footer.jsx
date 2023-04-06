@@ -6,39 +6,51 @@ import discard from "../Images/Vector1.svg";
 
 function Footer() {
   return (
-<>
-    <div className={style.parent}>
-      <div>
-        <img src={F2} alt="" />
-        <p className={style.copyr}>© 2022 Alexandria Labs. All Right Reserved</p>
-      </div>
-      <div style={{ display: "flex" }} className={style.twitterwdc}>
-        <img src={fb} alt="" />
-        <img src={discard} alt="" />
-      </div>
-      <div>
-        <p>About</p>
-        <p>Author Submissions</p>
-      </div>
-      <div>
-        <p>Early Access</p>
-        <p>Team</p>
-      </div>
-      <div>
+    <>
+      <div className={style.parent}>
         <div>
+          <img src={F2} alt="" />
+          <p className={style.copyr}>
+            © 2022 Alexandria Labs. All Right Reserved
+          </p>
+        </div>
+        <div style={{ display: "flex" }} className={style.twitterwdc}>
           <img src={fb} alt="" />
-          <p>Twitter</p>
+          <img src={discard} alt="" />
         </div>
         <div>
-          <img src={discard} alt="" />
-          <p>Discard</p>
+          <p>About</p>
+          <p>Author Submissions</p>
+        </div>
+        <div>
+          <p>Early Access</p>
+          <p>Team</p>
+        </div>
+        <div className={style.resItems}>
+          <p>About</p>
+          <p>Early Access</p>
+        </div>
+        <div className={style.resItems}>
+          <p>Author Submissions</p>
+          <p>Team</p>
+        </div>
+        <div>
+          <div>
+            <img src={fb} alt="" />
+            <p>Twitter</p>
+          </div>
+          <div>
+            <img src={discard} alt="" />
+            <p>Discard</p>
+          </div>
+        </div>
+        <div style={{ textAlign: "center", margin: "2rem 0rem 0px 0px " }}>
+          <p className={style.copyr}>
+            © 2022 Alexandria Labs. All Right Reserved
+          </p>
         </div>
       </div>
-      <div style={{textAlign:'center' , margin:'2rem 0rem 0px 0px '}}>
-        <p className={style.copyr}>© 2022 Alexandria Labs. All Right Reserved</p>
-      </div>
-    </div>
-    <div className={style.parent2}>
+      <div className={style.parent2}>
         <div>
           <img src={fb} alt="" />
           <p>Twitter</p>

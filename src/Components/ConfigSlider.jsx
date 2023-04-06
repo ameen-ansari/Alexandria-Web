@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from "../Images/image1.png";
 import img2 from "../Images/image2.png";
 import img3 from "../Images/image3.png";
-import tc from "../Images/Group 1065.png";
 import tc2 from "../Images/Frame 63.png";
 
 export default class PreviousNextMethods extends Component {
@@ -25,6 +24,7 @@ export default class PreviousNextMethods extends Component {
     const settings = {
       dots: false,
       infinite: true,
+      arrows:false,
       speed: 1000,
       slidesToShow: 3,
       slidesToScroll: 3,
