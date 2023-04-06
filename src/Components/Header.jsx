@@ -55,7 +55,7 @@ function Header() {
             <NavbarBtn2 src={exploreBtnImg} value="EXPLORE" />
             <NavbarBtn value="PUBLISH" />
           </div>
-          <img className="absolute  top-[0%] md:top-[5%]  right-0" src={star} alt="" />
+          <img className="absolute  top-[-5%] md:top-[5%]  right-0" src={star} alt="" />
         </div>
         <div className={style.HeaderP2}>
           <img src={headerSec2Img} alt="" width={100} height={100} />
