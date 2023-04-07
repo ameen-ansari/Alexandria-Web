@@ -64,11 +64,12 @@
 }
   .imgP {
     background: linear-gradient(180deg, #7d75d8 0%, #7d75d8 100%);
-    padding: 0rem 0rem 1rem 0rem;
     border-radius: 9px;
   }
   .img {
+    width: 100% !important;
     box-shadow: none;
+    padding: 1rem ;
   }
   .Part1 > div:nth-child(1){
     font-size: 24px;
@@ -195,7 +196,8 @@ margin: auto;
 
 @media (max-width:500px){
   .Part1 > div:nth-child(1) > p:nth-child(1){
-      font-size: 28px;
+      font-size: 24px;
+      line-height: 28px;
   }
   .arrows p {
     font-size: 80px !important;
