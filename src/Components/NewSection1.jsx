@@ -12,34 +12,40 @@ import cardImg3 from '../Images/Cards/Document.svg'
 import cardImg5 from '../Images/Cards/Paper.svg'
 import cardImg4 from '../Images/Cards/Edit Square.svg'
 import floaterImg from '../Images/Cards/Rectangle.svg'
+import arrow from '../Images/whiteArr.svg'
 
 function NewSection1() {
   return (
     <div>
       <div className={style.Parent}>
         <div className={style.divOne}>
-          <img className={style.hr} src={img2} alt="" />
+          <img className={`${style.hr} md:pb-4`} src={img2} alt="" />
           <p>
             Welcome to the <span style={{ color: "#7D75D8" }}>wall of</span>
           </p>
           <img src={img} alt="" />
+          <div>
+          <p className="md:px-[15%]">
+            This is where we tell you at all our hopes and aspirations.
+          </p>
           <p>
-            This is where we tell you at all our hopes and aspirations. Behold
+             Behold
             the wanderer of the literary metaverse.
           </p>
-          <img className={style.hr} src={img2} alt="" />
+          </div>
+          <img className={`${style.hr} md:pt-4`} src={img2} alt="" />
         </div>
         <div className={style.divTwo}>
           <div>
             <img src={img3} width={500} alt="" />
           </div>
-          <div>
+          <div className={style.div2div2}>
             <p>Publish a book NFT</p>
             <p>
               Duis non orci justo. Nulla lobortis, elit ac imperdiet mollis,
               nisi ante blandit ligula, vel elementum urna velit eu lorem
             </p>
-            <NavbarBtn value="PUBLISH WORKS &rarr;" />
+            <NavbarBtn src={arrow} value="PUBLISH WORKS" />
           </div>
         </div>
       </div>
