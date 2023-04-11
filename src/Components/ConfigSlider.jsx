@@ -7,6 +7,8 @@ import img1 from "../Images/image1.png";
 import img2 from "../Images/image2.png";
 import img3 from "../Images/image3.png";
 import tc2 from "../Images/Frame 63.png";
+import arrow1 from '../Images/arrow1.png'
+import arrow2 from '../Images/arrow2.png'
 
 export default class PreviousNextMethods extends Component {
   constructor(props) {
@@ -26,9 +28,18 @@ export default class PreviousNextMethods extends Component {
       infinite: true,
       arrows:false,
       speed: 1000,
-      slidesToShow: 3,
+      slidesToShow: 3.2,
       slidesToScroll: 3,
       responsive: [
+        {
+          breakpoint: 1400, // screen size at which to apply these settings
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          },
+        },
         {
           breakpoint: 800, // screen size at which to apply these settings
           settings: {
@@ -58,8 +69,8 @@ export default class PreviousNextMethods extends Component {
             </p>
           </div>
           <div className={style.arrows}>
-            <p onClick={this.previous}>&larr;</p>
-            <p onClick={this.next}>&rarr;</p>
+            <img onClick={this.previous} src={arrow2} alt="" />
+            <img onClick={this.next} src={arrow1} alt="" />
           </div>
         </div>
         <div className={style.parent}>
