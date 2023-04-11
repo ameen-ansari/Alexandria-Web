@@ -1,17 +1,15 @@
 import React from "react";
 import headerSec2Img from "../Images/hero-illustrations.png";
-import headerSec2ImgRes from "../Images/Group 1066 (1).svg";
+import headerSec2ImgRes from "../Images/hero-illustration12.png";
 import exploreBtnImg from "../Images/Vector.png";
 import Logo from "../Images/Frame.svg";
 import style from "../Styles/Header.module.css";
 import NavbarBtn from "./Buttons/NavbarBtn";
 import NavbarBtn2 from "./Buttons/NavbarBtn2";
 import Burger from "../Images/Group 1067.svg";
-import ill1 from ".././Images/Ellipse 9 (1).svg";
-import ill3 from ".././Images/Ellipse 10 (1).svg";
-import ill2 from ".././Images/Ellipse 9 (2).svg";
 import curvers from "../Images/Group 1.svg";
-import star from '../Images/star.svg'
+import star from "../Images/star.svg";
+import bgTYpe from "../Images/hero-bg.svg";
 
 function Header() {
   let showOffC = () => {
@@ -27,16 +25,20 @@ function Header() {
   };
   return (
     <div className={style.HeaderParent}>
-      <div className={style.Navbar}>
+      <div className={`${style.Navbar} relative z-10`}>
         <div>
-          <img className="relative z-10" src={Logo} alt="Logo" />
+          <img
+            className="relative z-0 w-[294px] h-[94px]"
+            src={Logo}
+            alt="Logo"
+          />
         </div>
-        <div>
-          <p>About</p>
-          <p>Authors</p>
-          <p>Team</p>
+        <div className="xl:relative left-[3%]">
+          <p className="font-medium text-[20px] leading-[30px]">About</p>
+          <p className="font-medium text-[20px] leading-[30px]">Authors</p>
+          <p className="font-medium text-[20px] leading-[30px]">Team</p>
           <NavbarBtn className={style.btn1} value="CONNECT WALLET" />
-          <button>SELECT WALLET</button>
+          <button className="hidden">SELECT WALLET</button>
           <div>
             <img
               onClick={showOffC}
@@ -47,26 +49,24 @@ function Header() {
           </div>
         </div>
       </div>
-   <div className={style.Header}>
-        <div className={style.HeaderP1}>
-          <p >Your books on-chain.</p>
-          <p>The storefront you need to publish and sell books as NFTs</p>
-          <div>
+      <img className="absolute top-0 left-0 w-[100%]" src={bgTYpe} alt="BG" />
+      <div className={`${style.Header}`}>
+        <div className={`${style.HeaderP1}`}>
+          <img src={star} className="self-end" alt="" />
+          <p style={{fontFamily:'Prata'}} className="text-[40px] font-normal leading-[60px] text-[#FFFFFF] md:text-[60px] lg:text-[82px] lg:leading-[100px]  xl:text-[96px] xl:leading-[115px]">
+            Your books on chain.
+          </p>
+          <p className="text-[20px] font-normal leading-[30px] text-[#F6F6F6] md:text-[26px] xl:text-[32px] xl:leading-[48px]">The storefront you need to publish and sell books as NFTs</p>
+          <div className={style.heroBtns}>
             <NavbarBtn2 src={exploreBtnImg} value="EXPLORE" />
             <NavbarBtn value="PUBLISH" />
           </div>
-          <img style={{zIndex:1234567890}} className="absolute  top-[-1%] md:top-[5%] lg:top-[15%]  right-0" src={star} alt="" />
         </div>
         <div className={style.HeaderP2}>
-          <img src={headerSec2Img} alt="" width={100} height={100} />
-          <img src={headerSec2ImgRes} alt="" width={100} height={100} />
-          <img className="absolute top-0 left-0"  src={ill3} alt="" width={100} height={100} />
-          <img  className="absolute top-0 right-0" src={ill3} alt="" width={100} height={100} />
+          <img  src={headerSec2Img} alt="" width={100} height={100} />
+          <img src={headerSec2ImgRes} alt="" />
         </div>
       </div>
-     <img className={style.ill1} src={ill1} alt="" />
-      <img className={style.ill2} src={ill2} alt="" />
-      <img className={`${style.curvers} z-10`} src={curvers} alt="" />
       <div id="offC" className={style.offcanvas}>
         <div>
           <p className={style.cencel} onClick={removeOffC}>
@@ -78,14 +78,10 @@ function Header() {
           <p style={{ cursor: "pointer" }} onClick={removeOffC}>
             Author
           </p>
-          <p onClick={removeOffC}>Team</p>
-          <NavbarBtn
-            func={removeOffC}
-            className={style.btn1}
-            value="CONNECT WALLET"
-          />
+          <p onClick={removeOffC} >Team</p>
         </div>
       </div>
+      <img src={curvers} className='md:absolute top-0 left-[10%] w-[80%] z-0' alt="" />
     </div>
   );
 }

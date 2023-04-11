@@ -1,20 +1,16 @@
 .Parent {
   background: #f6f6f6;
-  border-radius: 4px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 8rem;
-  height: 2.5rem;
   color: #7d75d8;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
   text-align: center;
   border: none;
-  position: relative !important;
-  z-index: 1000008766;
 }
 .Parent2 {
   background: linear-gradient(90deg, #6b60eb 0%, #ce5fe6 100%);
@@ -22,9 +18,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative !important;
-  z-index: 1000008764;
-
   width: 10rem;
   height: 2.5rem;
   color: #7d75d8;
