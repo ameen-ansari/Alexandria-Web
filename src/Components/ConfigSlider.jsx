@@ -69,8 +69,8 @@ export default class PreviousNextMethods extends Component {
             </p>
           </div>
           <div className={style.arrows}>
-            <img onClick={this.previous} src={arrow2} alt="" />
-            <img onClick={this.next} src={arrow1} alt="" />
+            <img className="cursor-pointer" onClick={this.previous} src={arrow2} alt="" />
+            <img className="cursor-pointer" onClick={this.next} src={arrow1} alt="" />
           </div>
         </div>
         <div className={style.parent}>
